@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>ProjectM - 创建房间</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { margin:0; padding:0; overflow:hidden; background:#000; }
+    #viewport {
+      width: 1920px; height: 1080px;
+      transform-origin: top left;
+      position: absolute; top:0; left:0;
+    }
+  </style>
+</head>
+<body>
+<div id="viewport">
+<div style="width:1920px;height:1080px;position:relative;overflow:hidden;" class="bg-[#050508]">
+  
+  <div class="absolute top-0 left-0 w-[1920px] h-[1080px] opacity-15" style="background: radial-gradient(circle, #1a1a2e 0%, #050508 100%);"></div>
+
+  <div class="absolute top-0 left-0 w-[1920px] h-[1080px] bg-black/70"></div>
+
+  <div class="absolute top-[140px] left-[610px] w-[700px] h-[800px] bg-[#0d1117] border border-[#2a2d3e] flex flex-col shadow-2xl">
+    
+    <div class="flex flex-row items-center h-[80px] px-[40px] border-b border-[#2a2d3e] flex-none">
+      <div class="w-[6px] h-[32px] bg-orange-500 flex-none mr-[16px]"></div>
+      <span class="text-[30px] font-bold text-white tracking-wider flex-1">创建房间</span>
+      <button class="w-[36px] h-[36px] flex-none bg-[#1e2130] hover:bg-red-600 flex items-center justify-center">
+        <span class="text-white text-[22px]">✕</span>
+      </button>
+    </div>
+
+    <div class="flex flex-col px-[40px] py-[30px] gap-[22px] flex-1 overflow-hidden">
+      
+      <div class="flex flex-col gap-[8px] flex-none">
+        <span class="text-[17px] text-gray-400 font-medium">房间名称</span>
+        <div class="w-[620px] h-[50px] bg-[#161b22] border border-[#2a2d3e] flex items-center px-[16px]">
+          <span class="text-gray-600 text-[15px]">输入房间名称（可选）</span>
+        </div>
+        <span class="text-[13px] text-gray-600">不填则默认为「你的昵称的房间」，最多 32 字符</span>
+      </div>
+
+      <div class="flex flex-col gap-[8px] flex-none">
+        <div class="flex flex-row items-center gap-[4px]">
+          <span class="text-[17px] text-gray-400 font-medium">地图选择</span>
+          <span class="text-red-500 text-[17px]">*</span>
+        </div>
+        <div class="w-[620px] h-[50px] bg-[#161b22] border border-orange-500/60 flex items-center px-[16px]">
+          <span class="text-orange-300/60 text-[15px] flex-1">请选择地图（必选）</span>
+          <span class="text-gray-500 text-[14px]">▼</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-[8px] flex-none opacity-50">
+        <div class="flex flex-row items-center gap-[8px]">
+          <span class="text-[17px] text-gray-400 font-medium">游戏模式</span>
+          <span class="text-gray-600 text-[12px] px-[6px] py-[2px] border border-gray-700 rounded">锁定</span>
+        </div>
+        <div class="w-[620px] h-[50px] bg-[#0a0e14] border border-[#1e2130] flex items-center px-[16px]">
+          <span class="text-gray-500 text-[15px] flex-1">中路对线</span>
+          <span class="text-gray-600 text-[14px]">🔒</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-[8px] flex-none">
+        <span class="text-[17px] text-gray-400 font-medium">最大人数</span>
+        <div class="w-[620px] h-[50px] bg-[#161b22] border border-[#2a2d3e] flex items-center px-[16px]">
+          <span class="text-white text-[15px] flex-1">10</span>
+          <span class="text-gray-500 text-[14px]">▼</span>
+        </div>
+        <span class="text-[13px] text-gray-600">可选 2 ~ 10 人</span>
+      </div>
+
+      <div class="flex flex-col gap-[8px] flex-none">
+        <span class="text-[17px] text-gray-400 font-medium">房间密码</span>
+        <div class="w-[620px] h-[50px] bg-[#161b22] border border-[#2a2d3e] flex items-center px-[16px]">
+          <span class="text-gray-600 text-[15px]">输入密码（可选，不填则公开房间）</span>
+        </div>
+        <span class="text-[13px] text-gray-600">最多 16 字符</span>
+      </div>
+
+    </div>
+
+    <div class="flex flex-row items-center justify-end gap-[16px] h-[90px] px-[40px] border-t border-[#2a2d3e] flex-none">
+      <button class="w-[140px] h-[52px] border border-gray-600 hover:bg-gray-800 flex items-center justify-center">
+        <span class="text-gray-300 text-[17px]">取消</span>
+      </button>
+      <button class="w-[220px] h-[52px] bg-orange-600/40 flex items-center justify-center cursor-not-allowed">
+        <span class="text-white/50 text-[17px] font-bold">确认创建</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="absolute top-0 left-0 w-[1920px] h-[2px] bg-orange-500/20"></div>
+</div>
+</div>
+<script>
+function fitViewport() {
+  var vp = document.getElementById('viewport');
+  var s = Math.min(innerWidth/1920, innerHeight/1080);
+  vp.style.transform = 'scale('+s+')';
+}
+fitViewport();
+addEventListener('resize', fitViewport);
+</script>
+</body>
+</html>
