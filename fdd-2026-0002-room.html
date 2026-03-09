@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>ProjectM - 自定义房间</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { margin:0; padding:0; overflow:hidden; background:#000; }
+    #viewport {
+      width: 1920px; height: 1080px;
+      transform-origin: top left;
+      position: absolute; top:0; left:0;
+    }
+  </style>
+</head>
+<body>
+<div id="viewport">
+<div style="width:1920px;height:1080px;position:relative;overflow:hidden;" class="bg-[#050508]">
+  
+  <div class="absolute top-0 left-0 w-[1920px] h-[1080px] opacity-20" style="background: radial-gradient(circle, #1a1a2e 0%, #050508 100%);"></div>
+
+  <div class="absolute top-[90px] left-[160px] w-[1600px] h-[900px] bg-[#0d1117] border border-[#2a2d3e] flex flex-col shadow-2xl">
+    
+    <div class="flex flex-row items-center h-[80px] px-[40px] border-b border-[#2a2d3e] flex-none">
+      <div class="w-[8px] h-[32px] bg-orange-500 flex-none mr-[15px]"></div>
+      <span class="flex-1 text-white font-bold text-[32px] tracking-wider">自定义房间</span>
+      <button class="w-[40px] h-[40px] flex-none bg-[#1e2130] hover:bg-red-600 flex items-center justify-center">
+        <span class="text-white text-[24px]">✕</span>
+      </button>
+    </div>
+
+    <div class="flex flex-row flex-1">
+      
+      <div class="w-[1120px] flex flex-col p-[30px] gap-[10px] flex-none">
+        <div class="flex flex-row h-[50px] bg-[#161925] items-center px-[20px] border-b border-orange-500/30">
+          <span class="w-[350px] text-orange-500/70 text-[18px] font-bold">房间名称</span>
+          <span class="w-[200px] text-orange-500/70 text-[18px] font-bold">房主</span>
+          <span class="w-[120px] text-orange-500/70 text-[18px] font-bold text-center">人数</span>
+          <span class="w-[180px] text-orange-500/70 text-[18px] font-bold">地图</span>
+          <span class="w-[150px] text-orange-500/70 text-[18px] font-bold">模式</span>
+          <span class="w-[60px] text-orange-500/70 text-[18px] font-bold text-center">🔒</span>
+        </div>
+
+        <div class="flex flex-col gap-[4px] flex-1">
+          <div class="flex flex-row h-[70px] bg-[#1a1e2e] items-center px-[20px] hover:bg-[#252a40] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px]">新手训练营</span>
+            <span class="w-[200px] text-gray-400 text-[18px]">Ghost_Protocol</span>
+            <span class="w-[120px] text-white text-[18px] text-center">3 / 10</span>
+            <span class="w-[180px] text-gray-400 text-[18px]">Neon City</span>
+            <span class="w-[150px] text-gray-400 text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-gray-600 text-[18px]">—</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row h-[70px] bg-orange-600/20 border border-orange-500 items-center px-[20px] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px] font-bold">ProjectM 竞技对抗</span>
+            <span class="w-[200px] text-white text-[18px]">Viper_X</span>
+            <span class="w-[120px] text-white text-[18px] text-center">8 / 10</span>
+            <span class="w-[180px] text-white text-[18px]">Orbital Station</span>
+            <span class="w-[150px] text-white text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-orange-500 text-[18px]">🔒</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row h-[70px] bg-[#1a1e2e] items-center px-[20px] hover:bg-[#252a40] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px]">周末休闲局</span>
+            <span class="w-[200px] text-gray-400 text-[18px]">Player_One</span>
+            <span class="w-[120px] text-white text-[18px] text-center">5 / 10</span>
+            <span class="w-[180px] text-gray-400 text-[18px]">Dust Refinery</span>
+            <span class="w-[150px] text-gray-400 text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-gray-600 text-[18px]">—</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row h-[70px] bg-[#1a1e2e] items-center px-[20px] hover:bg-[#252a40] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px]">测试房间 404</span>
+            <span class="w-[200px] text-gray-400 text-[18px]">Dev_Admin</span>
+            <span class="w-[120px] text-white text-[18px] text-center">1 / 4</span>
+            <span class="w-[180px] text-gray-400 text-[18px]">Training Ground</span>
+            <span class="w-[150px] text-gray-400 text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-orange-500 text-[18px]">🔒</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row h-[70px] bg-[#1a1e2e] items-center px-[20px] hover:bg-[#252a40] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px]">赛博之夜</span>
+            <span class="w-[200px] text-gray-400 text-[18px]">Neon_Rider</span>
+            <span class="w-[120px] text-red-400 text-[18px] text-center">10 / 10</span>
+            <span class="w-[180px] text-gray-400 text-[18px]">Neon City</span>
+            <span class="w-[150px] text-gray-400 text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-gray-600 text-[18px]">—</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row h-[70px] bg-[#1a1e2e] items-center px-[20px] hover:bg-[#252a40] cursor-pointer">
+            <span class="w-[350px] text-white text-[20px]">Kamille的房间</span>
+            <span class="w-[200px] text-gray-400 text-[18px]">Kamille</span>
+            <span class="w-[120px] text-white text-[18px] text-center">2 / 6</span>
+            <span class="w-[180px] text-gray-400 text-[18px]">Orbital Station</span>
+            <span class="w-[150px] text-gray-400 text-[18px]">中路对线</span>
+            <div class="w-[60px] flex items-center justify-center">
+              <span class="text-gray-600 text-[18px]">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-end items-center h-[50px] gap-[10px]">
+          <span class="text-gray-600 text-[14px] flex-1">自动刷新中 · 每 5 秒</span>
+          <button class="w-[120px] h-[40px] flex-none bg-[#2a2d3e] hover:bg-[#3a3d4e] flex items-center justify-center border border-gray-600">
+            <span class="text-white text-[14px]">↻ 刷新</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="w-[480px] flex flex-col p-[40px] bg-[#141722] border-l border-[#2a2d3e] flex-none">
+        <span class="text-orange-500 text-[14px] font-bold mb-[5px]">当前选中房间</span>
+        <span class="text-white text-[28px] font-bold mb-[20px]">ProjectM 竞技对抗</span>
+        
+        <div class="flex flex-col gap-[15px] mb-[40px]">
+          <div class="flex flex-row justify-between border-b border-gray-800 pb-[10px]">
+            <span class="text-gray-500 text-[18px]">地图</span>
+            <span class="text-white text-[18px]">Orbital Station</span>
+          </div>
+          <div class="flex flex-row justify-between border-b border-gray-800 pb-[10px]">
+            <span class="text-gray-500 text-[18px]">模式</span>
+            <span class="text-white text-[18px]">中路对线</span>
+          </div>
+          <div class="flex flex-row justify-between border-b border-gray-800 pb-[10px]">
+            <span class="text-gray-500 text-[18px]">人数</span>
+            <span class="text-white text-[18px]">8 / 10</span>
+          </div>
+          <div class="flex flex-row justify-between border-b border-gray-800 pb-[10px]">
+            <span class="text-gray-500 text-[18px]">房主</span>
+            <span class="text-white text-[18px]">Viper_X</span>
+          </div>
+          <div class="flex flex-row justify-between border-b border-gray-800 pb-[10px]">
+            <span class="text-gray-500 text-[18px]">密码</span>
+            <span class="text-orange-400 text-[18px]">需要密码</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-[15px] mt-auto">
+          <button class="w-[400px] h-[65px] flex-none bg-orange-600 hover:bg-orange-500 flex items-center justify-center shadow-lg shadow-orange-900/20">
+            <span class="text-white text-[22px] font-bold">加入房间</span>
+          </button>
+          <button class="w-[400px] h-[55px] flex-none border border-orange-600 hover:bg-orange-600/10 flex items-center justify-center">
+            <span class="text-orange-500 text-[20px] font-bold">创建房间</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row items-center h-[50px] px-[40px] bg-[#0a0c12] border-t border-[#2a2d3e] flex-none">
+      <div class="flex flex-row items-center gap-[10px] flex-1">
+        <div class="w-[10px] h-[10px] rounded-full bg-green-500 flex-none"></div>
+        <span class="text-gray-500 text-[14px]">当前模式:</span>
+        <span class="text-green-500 text-[14px] font-bold">局域网 (LAN)</span>
+        <span class="text-gray-700 text-[14px] mx-[10px]">|</span>
+        <span class="text-gray-500 text-[14px]">共找到 6 个房间</span>
+      </div>
+      <span class="text-gray-600 text-[14px]">ProjectM v0.1.0</span>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+function fitViewport() {
+  var vp = document.getElementById('viewport');
+  var s = Math.min(innerWidth/1920, innerHeight/1080);
+  vp.style.transform = 'scale('+s+')';
+}
+fitViewport();
+addEventListener('resize', fitViewport);
+</script>
+</body>
+</html>
