@@ -9,7 +9,7 @@
   <title>ProjectM — 游戏大厅</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html, body { margin: 0; padding: 0; overflow: hidden; background: #020617; }
+    html, body { margin: 0; padding: 0; overflow: hidden; background: #000; }
     #viewport {
       width: 1920px;
       height: 1080px;
@@ -17,62 +17,91 @@
       position: absolute;
       top: 0; left: 0;
     }
+    .bg-grid {
+      background-image: linear-gradient(to right, rgba(34, 211, 238, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .glow-cyan { box-shadow: 0 0 15px rgba(34, 211, 238, 0.4); }
+    .glow-text { text-shadow: 0 0 10px rgba(34, 211, 238, 0.6); }
   </style>
 </head>
 <body>
 <div id="viewport">
-  <div class="w-[1920px] h-[1080px] relative bg-[#020617] overflow-hidden">
-    <img class="absolute inset-0 w-full h-full opacity-20 object-cover" src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop" alt="bg" />
+  <div class="w-[1920px] h-[1080px] relative overflow-hidden bg-gradient-to-br from-[#050a14] via-[#02050a] to-black">
 
-    <div class="w-full h-full flex flex-col items-center justify-between py-[60px] relative z-10">
-
-      <div class="flex flex-col items-center">
-        <span class="text-[72px] font-black text-cyan-400 tracking-[0.2em] drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">PROJECT M</span>
-        <div class="w-[480px] h-[2px] bg-cyan-500 mt-3 opacity-50"></div>
-      </div>
-
-      <div class="flex flex-col gap-6">
-        <button class="w-[400px] h-[72px] bg-slate-900/80 border-l-4 border-cyan-500 border-r border-y border-cyan-500/20 flex items-center justify-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-all group cursor-pointer">
-          <span class="text-cyan-100 text-[24px] font-bold tracking-[0.15em] group-hover:text-white">创建房间</span>
-        </button>
-        <button class="w-[400px] h-[72px] bg-slate-900/80 border-l-4 border-cyan-500 border-r border-y border-cyan-500/20 flex items-center justify-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-all group cursor-pointer">
-          <span class="text-cyan-100 text-[24px] font-bold tracking-[0.15em] group-hover:text-white">英雄预览</span>
-        </button>
-        <button class="w-[400px] h-[72px] bg-slate-900/80 border-l-4 border-cyan-500 border-r border-y border-cyan-500/20 flex items-center justify-center hover:bg-cyan-900/40 hover:border-cyan-400 transition-all group cursor-pointer">
-          <span class="text-cyan-100 text-[24px] font-bold tracking-[0.15em] group-hover:text-white">设置</span>
-        </button>
-        <button class="w-[400px] h-[72px] bg-slate-900/80 border-l-4 border-red-500 border-r border-y border-red-500/20 flex items-center justify-center hover:bg-red-900/40 hover:border-red-400 transition-all group cursor-pointer">
-          <span class="text-red-100 text-[24px] font-bold tracking-[0.15em] group-hover:text-white">退出游戏</span>
-        </button>
-      </div>
-
-      <div class="w-full px-[60px] flex justify-between items-end">
-        <div class="flex flex-col">
-          <span class="text-cyan-500/50 text-[13px] uppercase tracking-tight">System Status: Online</span>
-          <span class="text-cyan-500/50 text-[13px] uppercase tracking-tight">Connection: Secure</span>
-        </div>
-        <span class="text-slate-500 font-mono text-[16px]">v1.0.0</span>
-      </div>
-
+    <div class="absolute inset-0 bg-grid opacity-40"></div>
+    <div class="absolute right-[-100px] top-[-100px] opacity-10">
+      <span class="text-[800px] font-bold text-cyan-500 select-none leading-none">M</span>
     </div>
 
-    <img class="absolute top-0 left-0 w-[128px] h-[128px] opacity-30" src="https://www.svgrepo.com/show/445133/corner-top-left.svg" alt="" />
-    <img class="absolute bottom-0 right-0 w-[128px] h-[128px] opacity-30 rotate-180" src="https://www.svgrepo.com/show/445133/corner-top-left.svg" alt="" />
+    <div class="absolute left-0 top-0 flex flex-col p-[120px] gap-0" style="width:640px; height:1080px;">
+
+      <div class="flex flex-col mb-[64px]">
+        <span class="text-[110px] font-black text-cyan-400 leading-none tracking-tighter glow-text">PROJECT M</span>
+        <div class="w-[480px] h-[2px] bg-cyan-500 mt-[16px] mb-[8px] glow-cyan"></div>
+        <span class="text-[14px] text-cyan-400/50 tracking-[0.8em] font-light pl-[8px]">TACTICAL ARENA</span>
+      </div>
+
+      <div class="flex flex-col gap-[12px]">
+        <button class="w-[280px] h-[48px] bg-cyan-950/20 border-l-[3px] border-cyan-500 flex flex-row items-center pl-[24px] hover:bg-cyan-500/20 hover:border-l-[5px] transition-all group cursor-pointer">
+          <span class="text-cyan-100 text-[16px] font-medium tracking-[0.15em] uppercase group-hover:text-white">创建房间</span>
+        </button>
+        <button class="w-[280px] h-[48px] bg-cyan-950/10 border-l-[3px] border-cyan-500/40 flex flex-row items-center pl-[24px] hover:bg-cyan-500/20 hover:border-cyan-500 hover:border-l-[5px] transition-all group cursor-pointer">
+          <span class="text-cyan-100/70 text-[16px] font-medium tracking-[0.15em] uppercase group-hover:text-white">英雄预览</span>
+        </button>
+        <button class="w-[280px] h-[48px] bg-cyan-950/10 border-l-[3px] border-cyan-500/40 flex flex-row items-center pl-[24px] hover:bg-cyan-500/20 hover:border-cyan-500 hover:border-l-[5px] transition-all group cursor-pointer">
+          <span class="text-cyan-100/70 text-[16px] font-medium tracking-[0.15em] uppercase group-hover:text-white">设置</span>
+        </button>
+        <button class="w-[280px] h-[48px] bg-red-950/10 border-l-[3px] border-red-600 flex flex-row items-center pl-[24px] hover:bg-red-600/20 hover:border-l-[5px] transition-all group cursor-pointer">
+          <span class="text-red-100/70 text-[16px] font-medium tracking-[0.15em] uppercase group-hover:text-white">退出游戏</span>
+        </button>
+      </div>
+
+      <div class="mt-[48px] flex flex-row items-center gap-[16px]">
+        <div class="w-[8px] h-[8px] bg-orange-500 rotate-45"></div>
+        <span class="text-[10px] text-orange-500/80 tracking-[0.2em] uppercase">System Online / Neural Link Stable</span>
+      </div>
+    </div>
+
+    <div class="absolute bottom-[40px] left-[120px] flex flex-col gap-[4px]">
+      <span class="text-[10px] text-white/30 tracking-[0.1em] uppercase">Version 1.0.0 - Stable Build</span>
+      <div class="flex flex-row items-center gap-[8px]">
+        <div class="w-[6px] h-[6px] rounded-full bg-green-500"></div>
+        <span class="text-[10px] text-white/30 uppercase">Server: North_Asia_01</span>
+      </div>
+    </div>
+
+    <div class="absolute bottom-[40px] right-[120px] flex flex-row items-end gap-[12px] opacity-40">
+      <div class="flex flex-col items-end">
+        <span class="text-[10px] text-cyan-400 font-bold tracking-tight">NEURAL INTERFACE</span>
+        <span class="text-[8px] text-cyan-400/50 tracking-[0.1em]">ENCRYPTED CONNECTION</span>
+      </div>
+      <div class="w-[40px] h-[40px] border border-cyan-500/50 flex items-center justify-center">
+        <span class="text-cyan-400 font-black text-[20px]">M</span>
+      </div>
+    </div>
+
+    <div class="absolute right-0 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-cyan-500/20 to-transparent"></div>
+    <div class="absolute right-[40px] top-1/2 -translate-y-1/2 flex flex-col gap-[8px] opacity-20">
+      <div class="w-[4px] h-[48px] bg-cyan-500"></div>
+      <div class="w-[4px] h-[16px] bg-cyan-500"></div>
+      <div class="w-[4px] h-[4px] bg-cyan-500"></div>
+    </div>
+
   </div>
 </div>
 
 <script>
   function fitViewport() {
     var vp = document.getElementById('viewport');
-    var sw = window.innerWidth / 1920;
-    var sh = window.innerHeight / 1080;
-    var s = Math.min(sw, sh);
+    var s = Math.min(innerWidth / 1920, innerHeight / 1080);
     vp.style.transform = 'scale(' + s + ')';
-    document.body.style.width = window.innerWidth + 'px';
-    document.body.style.height = window.innerHeight + 'px';
+    document.body.style.width = innerWidth + 'px';
+    document.body.style.height = innerHeight + 'px';
   }
   fitViewport();
-  window.addEventListener('resize', fitViewport);
+  addEventListener('resize', fitViewport);
 </script>
 </body>
 </html>
