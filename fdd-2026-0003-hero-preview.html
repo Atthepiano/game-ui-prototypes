@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>ProjectM - 英雄预览</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { margin:0; padding:0; overflow:hidden; background:#000; }
+    #viewport {
+      width: 1920px; height: 1080px;
+      transform-origin: top left;
+      position: absolute; top:0; left:0;
+    }
+  </style>
+</head>
+<body>
+<div id="viewport">
+<div style="width:1920px;height:1080px;position:relative;overflow:hidden;" class="bg-[#05070a] text-slate-200 font-sans">
+  
+  <div class="absolute inset-0 opacity-30" style="background: radial-gradient(circle at 50% 50%, #1e293b 0%, #000000 100%);"></div>
+
+  <div class="absolute top-0 left-0 w-[1920px] h-[80px] flex flex-row items-center px-[40px] z-50">
+    <button class="w-[160px] h-[44px] flex-none flex flex-row items-center gap-[8px] bg-slate-800/50 hover:bg-slate-700 px-[16px] border-l-2 border-orange-500">
+      <span class="text-orange-500 text-[20px]">←</span>
+      <span class="text-white text-[16px]">返回大厅</span>
+    </button>
+  </div>
+
+  <div class="absolute left-[40px] top-[96px] w-[200px] h-[940px] flex flex-col gap-[12px] overflow-hidden">
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">艾瑞莉娅</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border-2 border-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.4)] flex items-center justify-center relative">
+        <span class="text-slate-500 text-[12px]">PORTRAIT</span>
+        <div class="absolute top-0 right-0 bg-orange-500 px-[8px] py-[2px]">
+          <span class="text-black text-[10px] font-bold">默认</span>
+        </div>
+      </div>
+      <span class="text-center text-[14px] text-orange-500 font-bold">亚索</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">劫</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">锐雯</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">阿狸</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">佐伊</span>
+    </div>
+
+    <div class="flex-none w-[200px] flex flex-col gap-[6px] opacity-60 cursor-pointer">
+      <div class="w-[200px] h-[120px] bg-slate-800 border border-slate-700 flex items-center justify-center">
+        <span class="text-slate-600 text-[12px]">PORTRAIT</span>
+      </div>
+      <span class="text-center text-[14px] text-gray-400">厄加特</span>
+    </div>
+  </div>
+
+  <div class="absolute left-[280px] top-0 w-[1000px] h-[1080px] flex flex-col items-center justify-center">
+    <div class="w-[500px] h-[700px] bg-slate-900/20 flex items-center justify-center relative">
+      <div class="w-[300px] h-[600px] bg-slate-800/30 border border-slate-800"></div>
+      <span class="absolute text-slate-700 text-[36px] font-black tracking-widest">HERO MODEL</span>
+    </div>
+    <div class="absolute bottom-[60px] flex flex-col items-center">
+      <span class="text-[120px] font-black text-white/5 leading-none uppercase italic">YASUO</span>
+      <span class="text-[48px] font-bold text-white mt-[-60px]">亚索</span>
+    </div>
+  </div>
+
+  <div class="absolute right-[40px] top-[96px] w-[420px] h-[940px] bg-slate-900/80 border border-slate-800 p-[28px] flex flex-col gap-[24px]">
+    <div class="flex flex-col gap-[4px]">
+      <span class="text-orange-500 text-[12px] tracking-widest uppercase">SELECTED HERO</span>
+      <span class="text-[36px] font-bold text-white">亚索</span>
+    </div>
+
+    <div class="flex flex-col gap-[10px]">
+      <div class="flex flex-row justify-between items-end">
+        <span class="text-slate-400 text-[14px]">等级</span>
+        <span class="text-orange-500 text-[22px] font-bold">Lv.5</span>
+      </div>
+      <div class="relative w-full h-[24px] flex items-center">
+        <div class="absolute w-full h-[4px] bg-slate-700 rounded"></div>
+        <div class="absolute w-[25%] h-[4px] bg-orange-500 rounded"></div>
+        <div class="absolute left-[25%] w-[16px] h-[16px] bg-white rounded-full border-2 border-orange-500 ml-[-8px]"></div>
+      </div>
+      <div class="flex flex-row justify-between text-[11px] text-slate-500">
+        <span>Lv.1</span>
+        <span>Lv.20</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[10px]">
+      <div class="flex flex-row items-center gap-[8px]">
+        <div class="w-[3px] h-[16px] bg-orange-500"></div>
+        <span class="text-white font-bold text-[14px]">基础属性</span>
+      </div>
+      <div class="flex flex-col gap-[8px]">
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">生命</span><span class="text-white font-mono text-[13px]">880</span></div>
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">魔法</span><span class="text-white font-mono text-[13px]">340</span></div>
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">物理攻击</span><span class="text-white font-mono text-[13px]">68</span></div>
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">法术攻击</span><span class="text-gray-600 font-mono text-[13px]">0 (固定)</span></div>
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">物理防御</span><span class="text-white font-mono text-[13px]">42</span></div>
+        <div class="flex flex-row justify-between"><span class="text-slate-400 text-[13px]">法术防御</span><span class="text-white font-mono text-[13px]">35</span></div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[10px]">
+      <div class="flex flex-row items-center gap-[8px]">
+        <div class="w-[3px] h-[16px] bg-orange-500"></div>
+        <span class="text-white font-bold text-[14px]">进阶属性</span>
+      </div>
+      <div class="flex flex-wrap gap-y-[6px]">
+        <div class="w-1/2 flex flex-row justify-between pr-[16px]"><span class="text-slate-400 text-[12px]">移动速度</span><span class="text-white text-[12px]">345</span></div>
+        <div class="w-1/2 flex flex-row justify-between pl-[16px]"><span class="text-slate-400 text-[12px]">攻击速度</span><span class="text-white text-[12px]">0.67</span></div>
+        <div class="w-1/2 flex flex-row justify-between pr-[16px]"><span class="text-slate-400 text-[12px]">暴击几率</span><span class="text-white text-[12px]">0%</span></div>
+        <div class="w-1/2 flex flex-row justify-between pl-[16px]"><span class="text-slate-400 text-[12px]">暴击伤害</span><span class="text-white text-[12px]">175%</span></div>
+        <div class="w-1/2 flex flex-row justify-between pr-[16px]"><span class="text-slate-400 text-[12px]">物理穿透</span><span class="text-white text-[12px]">0</span></div>
+        <div class="w-1/2 flex flex-row justify-between pl-[16px]"><span class="text-slate-400 text-[12px]">法术穿透</span><span class="text-white text-[12px]">0</span></div>
+        <div class="w-1/2 flex flex-row justify-between pr-[16px]"><span class="text-slate-400 text-[12px]">冷却缩减</span><span class="text-white text-[12px]">0%</span></div>
+        <div class="w-1/2 flex flex-row justify-between pl-[16px]"><span class="text-slate-400 text-[12px]">生命恢复</span><span class="text-white text-[12px]">3.5</span></div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[10px]">
+      <span class="text-slate-500 text-[11px] uppercase tracking-wider">技能</span>
+      <div class="flex flex-row gap-[8px]">
+        <div class="w-[56px] h-[56px] bg-slate-800 border border-slate-700 flex items-center justify-center relative cursor-pointer hover:border-orange-500/50">
+          <span class="text-[10px] text-slate-500">被动</span>
+        </div>
+        <div class="w-[56px] h-[56px] bg-slate-800 border border-slate-700 flex items-center justify-center cursor-pointer hover:border-orange-500/50">
+          <span class="text-white font-bold text-[16px]">Q</span>
+        </div>
+        <div class="w-[56px] h-[56px] bg-slate-800 border border-slate-700 flex items-center justify-center cursor-pointer hover:border-orange-500/50">
+          <span class="text-white font-bold text-[16px]">W</span>
+        </div>
+        <div class="w-[56px] h-[56px] bg-slate-800 border border-slate-700 flex items-center justify-center cursor-pointer hover:border-orange-500/50">
+          <span class="text-white font-bold text-[16px]">E</span>
+        </div>
+        <div class="w-[56px] h-[56px] bg-slate-800 border border-orange-500/50 flex items-center justify-center cursor-pointer">
+          <span class="text-orange-500 font-bold text-[16px]">R</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-auto">
+      <button class="w-full h-[52px] bg-orange-600 hover:bg-orange-500 flex items-center justify-center">
+        <span class="text-white font-bold text-[17px]">设为默认</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="absolute top-0 left-0 w-[1920px] h-[1px] bg-orange-500/10"></div>
+  <div class="absolute bottom-0 left-0 w-[1920px] h-[1px] bg-orange-500/10"></div>
+</div>
+</div>
+<script>
+function fitViewport() {
+  var vp = document.getElementById('viewport');
+  var s = Math.min(innerWidth/1920, innerHeight/1080);
+  vp.style.transform = 'scale('+s+')';
+}
+fitViewport();
+addEventListener('resize', fitViewport);
+</script>
+</body>
+</html>
